@@ -7,12 +7,12 @@ from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 uploads_dir = './uploads/'
 
 credentials = {
-    "apikey": "V_bxV6yd3a1OI8ncXSaOhH7LtwdYwyJAStbzmJ90sLEV",
-    "iam_apikey_description": "Auto-generated for key 6ffea6d3-c224-464c-ab9e-88c5112cb1b9",
+    "apikey": "wGNsHglMIxNh4TRRhGhi3Z_Qq00vjUP5XsMRvXs4qolN",
+    "iam_apikey_description": "Auto-generated for key e07331c4-1f0d-4f8f-8e12-3eac7ff6aaa6",
     "iam_apikey_name": "wdp-writer",
     "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
-    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/eed7635af9de4ec1a02ed80b7edae9dc::serviceid:ServiceId-534569a5-a81f-45d3-917b-aa49ae0a1197",
-    "url": "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/cc3f29ef-b536-466d-8905-430bb6d3007a",
+    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/eed7635af9de4ec1a02ed80b7edae9dc::serviceid:ServiceId-e631cf1f-f238-4393-a68f-9788973a6924",
+    "url": "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/d85048a6-f9ab-4e85-a68b-994afcf9a2d0",
 }
 
 authenticator = IAMAuthenticator(credentials['apikey'])
