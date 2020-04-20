@@ -45,6 +45,3 @@ def classify(filename):
 
 if __name__ == "__main__":
     app.run(debug=True)
-    # with open('./uploads/2.png', 'rb') as images_file:
-    #     classes = visual_recognition.classify(images_file=images_file, threshold='0.6', owners=["me"]).get_result()
-    #     print(json.dumps(classes, indent=2))

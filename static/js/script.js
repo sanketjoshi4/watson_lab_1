@@ -11,6 +11,7 @@ $(function () {
             cache: false,
             processData: false,
             success: function (classes) {
+
                 $('#loading-image').hide();
                 if (classes && classes.length) {
                     $('#result').html('<table><tr><th>Class</th><th>Score</th></tr>'
@@ -40,6 +41,7 @@ function readURL(input) {
         var reader = new FileReader();
         reader.onload = function (e) {
             $('#blah').attr('src', e.target.result);
+            $('#blah').show();
         };
         reader.readAsDataURL(input.files[0]); // convert to base64 string
     }
