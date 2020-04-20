@@ -12,7 +12,7 @@
 
 <body>
 
-<div class="jumbotron text-center" style="background-color: #c46644; color: #f9c4ad; max-height: 250px !important;">
+<div class="jumbotron text-center" style="">
     <h1>Fruit Classifer</h1>
     <p>Apple, Guava, Peach, Mango, Pomegranate</p>
 </div>
@@ -20,19 +20,20 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            Choose an image form your local directory
+            <code>Choose an image from your local directory</code>
             <br>
             <br>
             <form id="upload-file" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <input name="file" type="file" id="imgInp">
+                    <br>
                     <img id="blah" src="#" alt="your image" style="max-width:500px;max-height:500px;display: none"/>
                 </fieldset>
             </form>
             <br>
         </div>
         <div class="col-md-4">
-            Get the classification scores for available fruits
+            <code>Get the classification scores for available fruits</code>
             <br>
             <br>
             <form id="upload-file" method="post" enctype="multipart/form-data">
