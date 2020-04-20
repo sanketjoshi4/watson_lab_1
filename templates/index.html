@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fruits 101</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+    <h1>Fruit Classifer</h1>
+    <p>Resize this responsive page to see the effect!</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            Choose an image of a fruit to upload. Note : This will be classified into an apple, banana and orange
+            <br>
+            <br>
+            <form id="upload-file" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <input name="file" type="file" id="imgInp">
+                    <img id="blah" src="#" alt="your image" style="max-width:500px;max-height:600px;"/>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <button id="upload-file-btn" type="button">Classify</button>
+                </fieldset>
+            </form>
+            <br>
+        </div>
+        <div class="col-md-4">
+            <div id='result'></div>
+            <div id='loading-image' style="display: none">
+                <img src="{{ url_for('static', filename='img/loading.gif') }}" alt="Italian Trulli">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/lib/jquery-3.5.0.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</html>
