@@ -1,8 +1,7 @@
-from flask import Flask, render_template, request, jsonify
-import json
-import os
+import json, os
 from ibm_watson import VisualRecognitionV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+from flask import Flask, render_template, request, jsonify
 
 uploads_dir = './uploads/'
 
